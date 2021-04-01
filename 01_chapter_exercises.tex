@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\title{Introduction to Logic, P. Suppes - exercises}
+\author{Dominik Lenda}
+
+\begin{document}
+\maketitle
+\section*{Exercise 5.}
+
+$N = \text{New York is larger than Chicago}$\\
+$W = \text{New York is north of Washington}\\$
+$C = \text{Chicago is larger than New York}\\$
+$N = true, W = true, C = false$
+\\
+Which of the following sentences are true?
+
+\begin{enumerate}[label=(\alph*)]
+\item $N \vee C$ (true)
+\item $N \wedge C$ (false)
+\item $-N \wedge -C$ (false)
+\item $N \leftrightarrow -W \vee C$ (false)
+\item $W \vee -C \rightarrow N$ (true)
+\item $(W \vee N) \rightarrow (W \rightarrow -C)$ (true)
+\item $(W \leftrightarrow -N) \leftrightarrow (N \leftrightarrow C)$ (true)
+\item $(W \rightarrow N) \rightarrow [(N \rightarrow -C) \rightarrow (-C \rightarrow W)]$ (true)
+\end{enumerate}
+
+\end{document}
