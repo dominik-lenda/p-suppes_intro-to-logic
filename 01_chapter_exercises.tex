@@ -1,7 +1,9 @@
 \documentclass{article}
 
 \usepackage{enumitem}
+\setlist{nosep}  
 \usepackage{amsmath}
+\usepackage{setspace}
 
 \title{Introduction to Logic, P. Suppes - exercises}
 \author{Dominik Lenda}
@@ -9,23 +11,44 @@
 \begin{document}
 \maketitle
 \section*{Exercise 5.}
-
+Let\\
 $N = \text{New York is larger than Chicago}$\\
-$W = \text{New York is north of Washington}\\$
-$C = \text{Chicago is larger than New York}\\$
-$N = true, W = true, C = false$
-\\
+$W = \text{New York is north of Washington}$\\
+$C = \text{Chicago is larger than New York}$\\
+$N = true, W = true, C = false$\\
 Which of the following sentences are true?
-
+\medskip
 \begin{enumerate}[label=(\alph*)]
-\item $N \vee C$ (true)
-\item $N \wedge C$ (false)
-\item $-N \wedge -C$ (false)
-\item $N \leftrightarrow -W \vee C$ (false)
-\item $W \vee -C \rightarrow N$ (true)
-\item $(W \vee N) \rightarrow (W \rightarrow -C)$ (true)
-\item $(W \leftrightarrow -N) \leftrightarrow (N \leftrightarrow C)$ (true)
-\item $(W \rightarrow N) \rightarrow [(N \rightarrow -C) \rightarrow (-C \rightarrow W)]$ (true)
+\item $N \vee C = true$
+\item $N \wedge C = false$
+\item $-N \wedge -C = false$
+\item $N \leftrightarrow -W \vee C = false$
+\item $W \vee -C \rightarrow N = true$
+\item $(W \vee N) \rightarrow (W \rightarrow -C) = true$
+\item $(W \leftrightarrow -N) \leftrightarrow (N \leftrightarrow C) = true$
+\item $(W \rightarrow N) \rightarrow [(N \rightarrow -C) \rightarrow (-C \rightarrow W)] = true$
 \end{enumerate}
 
+\section*{Exercise 6.}
+Let\\
+$P = \text{Jane Austen was contemporary of Beethoven}$\\
+$Q = \text{Beethoven was a contemporary of Gauss}$\\
+$R = \text{Gauss was a contemporary of Napoleon}$\\
+$S = \text{Napoleon was a contemporary of Julius Caesar}$\\
+$P = true, Q = true, R = true, S = false$ \\
+Find the truth values of the following sentences:
+\medskip
+\begin{enumerate}[label=(\alph*)]
+\item $(P \wedge Q) \wedge R = true$
+\item $P \wedge (Q \wedge R) = true$
+\item $S \rightarrow P = true$
+\item $P \rightarrow S = false$
+\item $(P \wedge Q) \wedge (R \wedge S) = false$
+\item $P \wedge Q \leftrightarrow R \wedge -S = true$
+\item $(P \leftrightarrow Q) \rightarrow (S \leftrightarrow R) = false$
+\item $(-P \leftarrow Q) \leftarrow (S \leftarrow R) = true$
+\item $(P \rightarrow -Q) \rightarrow (S \leftrightarrow R) = true$
+\item $(P \rightarrow Q) [(Q \rightarrow R) \rightarrow (R \rightarrow S)] = false$
+\item $P \rightarrow [Q \leftrightarrow (R \rightarrow S)] = false$
+\end{enumerate}
 \end{document}
