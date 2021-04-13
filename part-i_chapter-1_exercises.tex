@@ -88,9 +88,9 @@ If $P \leftrightarrow Q$ is true, what can be said about the truth value of $P \
 Answer: \(P \vee -Q \text{ is } true\)
 
 \section*{Exercise 10.}
-
 \begin{enumerate}[label=(\alph*)]
-    \item \(P \lor Q\) is \textbf{not} a tautology.\\
+
+\item \(P \lor Q\) is \textbf{not} a tautology.\\
 \(
 \begin{array}{|c c|c|}
 p & q & p \lor q\\
@@ -102,6 +102,7 @@ F & F & F\\
 \end{array}
 \)
 \medskip
+
 \item \(P \lor -P\) is a tautology\\
 \(
 \begin{array}{|c|c|}
@@ -111,8 +112,51 @@ T & T\\
 F & T\\
 \end{array}
 \)
+\medskip
+
+\item \(P \lor Q \rightarrow Q \lor P\) is a tautology.\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \lor Q \rightarrow Q \lor P\\
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\medskip
+
+\item \(P \rightarrow (P \lor Q) \lor R\) is a tautology.\\
+\(
+\begin{array}{|c c c|c|}
+P & Q & R & P \rightarrow (P \lor Q) \lor R\\
+\hline
+T & T & T & T\\
+T & T & F & T\\
+T & F & T & T\\
+T & F & F & T\\
+F & F & F & T\\
+F & F & T & T\\
+F & T & F & T\\
+F & T & T & T\\
+\end{array}
+\)
+\medskip
+
+\item \(P \rightarrow (-P \rightarrow Q)\) is a tautology.\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \rightarrow (-P \rightarrow Q)\\
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\medskip
 
 \end{enumerate}
-
 
 \end{document}
