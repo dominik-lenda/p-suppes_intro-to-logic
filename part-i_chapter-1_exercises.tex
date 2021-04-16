@@ -195,6 +195,66 @@ F & F & T\\
 \end{array}
 \)
 \medskip
+
+\item \(P \land Q \rightarrow P \lor R\) is a tautology.\\
+\(
+\begin{array}{|c c c|c|}
+P & Q & R & P \land Q \rightarrow P \lor R\\
+\hline
+T & T & T & T\\
+T & T & F & T\\
+T & F & T & T\\
+T & F & F & T\\
+F & F & F & T\\
+F & F & T & T\\
+F & T & F & T\\
+F & T & T & T\\
+\end{array}
+\)
+\medskip
+
+\item \([P \lor (-P \land Q)] \lor (-P \land -Q)\) is a tautology.\\
+\(
+\begin{array}{|c c|c|}
+P & Q & [P \lor (-P \land Q)] \lor (-P \land -Q)\\
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\medskip
+
+\item \(P \land Q \rightarrow (P \leftrightarrow Q \lor R) \) is a tautology.\\
+\(
+\begin{array}{|c c c|c|}
+    P & Q & R & P \land Q \rightarrow (P \leftrightarrow Q \lor R)\\
+\hline
+T & T & T & T\\
+T & T & F & T\\
+T & F & T & T\\
+T & F & F & T\\
+F & F & F & T\\
+F & F & T & T\\
+F & T & F & T\\
+F & T & T & T\\
+\end{array}
+\)
+\medskip
+
+\item \([P \land Q \rightarrow (P \land -P \rightarrow Q \lor -Q)] \land (Q \rightarrow Q)\) is a tautology.\\
+\(
+\begin{array}{|c c|c|}
+P & Q & [P \land Q \rightarrow (P \land -P \rightarrow Q \lor -Q)] \land (Q \rightarrow Q)\\
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\medskip
 \end{enumerate}
 
 \end{document}
