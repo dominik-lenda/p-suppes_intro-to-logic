@@ -12,10 +12,6 @@
 \begin{document}
 \maketitle
 
-
-\section{Decomposing concepts}
-
-When a sentence that is not a tautology may become one?
 \section*{Exercise 4.}
 In the following examples determine the truth value of the compoind sentences from the given truth values of the component sentences.
 \medskip
@@ -360,62 +356,22 @@ F & F & T\\
 \medskip
 \end{enumerate}
 
-
 \section*{Exercise 13.}
 Give examples of sentences P and Q (not necessarily atomic) such that the following compound sentences are tautologies.
 \singlespace
 \begin{enumerate}[label=(\alph*)]
 \item \(P \land Q\) is \textbf{not} a tautology.\\
 \(
-\begin{array}{|c c|c|}
-P & Q & P \land Q\\
+\begin{array}{|c c|c|c|}
+P & Q & P \land Q & (P_1 \lor -P_2) \land (Q_1 \lor -Q_2)\\
 \hline
-T & T & T\\
-T & F & F\\
-F & T & F\\
-F & F & F\\
+T & T & T & T\\
+T & F & F & T\\
+F & T & F & T\\
+F & F & F & T\\
 \end{array}
-\)
-\medskip
-
-Changing atomic sentences \(P\) and \(Q\) into compound sentences \(P_1 \lor -P_2\) and \(Q\) into \(Q_1 \lor -Q_2\) makes the whole sentence tautology.\\
-\(
-\begin{array}{|c c|c|}
-P & Q & (P_1 \lor -P_2) \land (Q_1 \lor -Q_2)\\
-\hline
-T & T & T\\
-T & F & T\\
-F & T & T\\
-F & F & T\\
-\end{array}
-\)
-\medskip
-
-\item \(P \lor (P \land -Q)\) is \textbf{not} a tautology.\\
-\(
-\begin{array}{|c c|c|}
-P & Q & P \lor (P \land -Q)\\
-\hline
-T & T & T\\
-T & F & F\\
-F & T & F\\
-F & F & F\\
-\end{array}
-\)
-\medskip
-
-Changing atomic sentences \(P\) and \(Q\) into compound sentences \(P_1 \lor -P_2\) and \(Q\) into \(Q_1 \lor -Q_2\) makes the whole sentence tautology.\\
-\(
-\begin{array}{|c c|c|}
-P & Q & \\
-\hline
-T & T & T\\
-T & F & T\\
-F & T & T\\
-F & F & T\\
-\end{array}
-\)
-\medskip
+\)\\
+Changing atomic sentences \(P\) and \(Q\) into compound sentences \(P_1 \lor -P_2\) and \(Q_1 \lor -Q_2\) makes the whole sentence tautology.
 \end{enumerate}
 
 \end{document}
