@@ -355,4 +355,62 @@ F & F & T\\
 \)
 \medskip
 \end{enumerate}
+
+\section*{Exercise 13.}
+Give examples of sentences P and Q (not necessarily atomic) such that the following compound sentences are tautologies.
+\singlespace
+\begin{enumerate}[label=(\alph*)]
+\item Sentence \(W = P \land Q\) is \textbf{not} a tautology. Assumption \(P = P \lor -P\) and \(Q = Q \lor -Q\) changes \(W\) into a tautology.\\
+\(
+\begin{array}{|c c|c|c|}
+P & Q & P \land Q & (P \lor -P) \land (Q \lor -Q)\\
+\hline
+T & T & T & T\\
+T & F & F & T\\
+F & T & F & T\\
+F & F & F & T\\
+\end{array}
+\)
+\medskip
+\item Sentence \(W = P \lor (P \land -Q)\) is \textbf{not} a tautology. Assumption \(P = P \lor -P\) changes \(W\) into a tautology.\\ 
+\(
+\begin{array}{|c c|c|c|}
+P & Q & P \lor (P \land -Q) & (P \lor -P) \lor (Q \land -Q)\\
+\hline
+T & T & T & T\\
+T & F & T & T\\
+F & T & F & T\\
+F & F & F & T\\
+\end{array}
+\)
+\medskip
+
+\item Sentence \(W = P \rightarrow P \land -Q\) is \textbf{not} a tautology. Assumption \(Q = -P\) changes \(W\) into a tautology.\\ 
+\(
+\begin{array}{|c c|c|c|}
+    P & Q & P \rightarrow P \land -Q & P \rightarrow P \land -(-P)\\
+\hline
+T & T & F & T\\
+T & F & T & T\\
+F & T & T & T\\
+F & F & T & T\\
+\end{array}
+\)
+\medskip
+
+\item Sentence \(W = P \rightarrow -P\) is \textbf{not} a tautology. Assumption \(P = -(P \lor -P)\) changes \(W\) into a tautology.\\ 
+\(
+\begin{array}{|c|c|c|}
+    P & P \rightarrow -P & -(P \lor -P) \rightarrow -(-(P \lor -P))\\
+\hline
+T & F & T\\
+F & T & T\\
+\end{array}
+\)
+\medskip
+\end{enumerate}
+
+\section*{Exercise 14.}
+Is there any sentence \(P\) such that \(P \land -P\) is a tautology?\\
+Answer: No such sentence exists.
 \end{document}
