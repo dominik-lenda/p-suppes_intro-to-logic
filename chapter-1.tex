@@ -413,4 +413,198 @@ F & T & T\\
 \section*{Exercise 14.}
 Is there any sentence \(P\) such that \(P \land -P\) is a tautology?\\
 Answer: No such sentence exists.
+
+\section*{Exercise 15.}
+If \(P\) and \(Q\) are distinct atomic sentences, the sentence \(P \land Q\) tautologically implies which of the following?
+\singlespace
+
+\begin{enumerate}[label=(\alph*)]
+\item \(P\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow P\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) tautologically implies \(P\).\\
+\medskip
+
+\item \(Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow Q\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) tautologically implies \(Q\).\\
+\medskip
+
+\item \(P \lor Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow P \lor Q\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) tautologically implies \(P \lor Q\).\\
+\medskip
+
+\item \(P \land -Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow P \land -Q\\ 
+\hline
+T & T & F\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) \textbf{does not} tautologically imply \(P \land -Q\).\\
+\medskip
+
+\item \(-P \lor Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow -P \lor Q\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) tautologically implies \(-P \lor Q\).\\
+\medskip
+
+\item \(-Q \rightarrow P\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow (-Q \rightarrow P)\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) tautologically implies \(-Q \rightarrow P\).\\
+\medskip
+
+\item \(P \leftrightarrow Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \land Q \rightarrow (P \leftrightarrow Q)\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P \land Q \) tautologically implies \(P \leftrightarrow Q\).\\
+\medskip
+\end{enumerate}
+
+\section*{Exercise 16.}
+If \(P\) and \(Q\) are distinct atomic sentences, the sentence \(-P \lor Q\) tautologically implies which of the following?
+\singlespace
+
+\begin{enumerate}[label=(\alph*)]
+\item \(P\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & -P \lor Q \rightarrow P\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & F\\
+F & F & F\\
+\end{array}
+\)
+\singlespace
+Answer: \(-P \lor Q\) \textbf{does not} tautologically imply \(P\).\\
+\medskip
+
+\item \(Q \rightarrow P\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & -P \lor Q \rightarrow (Q \rightarrow P)\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & F\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(-P \lor Q\) \textbf{does not} tautologically imply \(Q \rightarrow P\).\\
+\medskip
+
+\item \(P \rightarrow Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & -P \lor Q \rightarrow (P \rightarrow Q)\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(-P \lor Q\) tautologically implies \(P \rightarrow Q\).\\
+\medskip
+
+\item \(-Q \rightarrow -P\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & -P \lor Q \rightarrow (-Q \rightarrow -P)\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(-P \lor Q\) tautologically implies \(-Q \rightarrow -P\).\\
+\medskip
+
+\item \(-P \land Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & -P \lor Q \rightarrow -P \land Q\\ 
+\hline
+T & T & F\\
+T & F & T\\
+F & T & T\\
+F & F & F\\
+\end{array}
+\)
+\singlespace
+Answer: \(-P \lor Q\) \textbf{does not} tautologically imply \(-P \land Q\).\\
+\medskip
+
+\end{enumerate}
+
 \end{document}
