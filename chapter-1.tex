@@ -13,7 +13,7 @@
 \maketitle
 
 \section*{Exercise 4.}
-In the following examples determine the truth value of the compoind sentences from the given truth values of the component sentences.
+In the following examples determine the truth value of the compound sentences from the given truth values of the component sentences.
 \medskip
 \begin{enumerate}[label=(\roman*)]
     \item "Galileo was born before Descartes" is true.
@@ -605,6 +605,106 @@ F & F & F\\
 Answer: \(-P \lor Q\) \textbf{does not} tautologically imply \(-P \land Q\).\\
 \medskip
 
+\end{enumerate}
+
+\section*{Exercise 17.}
+If \(P\) and \(Q\) are distinct atomic sentences, the sentence \(P\) is tautologically equivalent to which of the following?
+\begin{enumerate}[label=(\alph*)]
+
+\item \(P \lor Q\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \leftrightarrow P \lor Q\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & F\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is \textbf{not} tautologically equivalent to \(P \lor Q\).\\
+\medskip
+
+\item \(P \lor -P\)\\
+\(
+\begin{array}{|c|c|}
+P & P \leftrightarrow P \lor -P\\ 
+\hline
+T & T\\
+F & F\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is \textbf{not} tautologically equivalent to \(P \lor -P\).\\
+\medskip
+
+\item \(P \land P\)\\
+\(
+\begin{array}{|c|c|}
+P & P \leftrightarrow P \land P\\ 
+\hline
+T & T\\
+F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is tautologically equivalent to \(P \land P\).\\
+\medskip
+
+\item \(P \rightarrow P\)\\
+\(
+\begin{array}{|c|c|}
+P & P \leftrightarrow P \rightarrow P\\ 
+\hline
+T & T\\
+F & F\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is \textbf{not} tautologically equivalent to \(P \rightarrow P\).\\
+\medskip
+
+\item \(-P \rightarrow P\)\\
+\(
+\begin{array}{|c|c|}
+P & P \leftrightarrow -P \rightarrow P\\ 
+\hline
+T & T\\
+F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is  tautologically equivalent to \(-P \rightarrow P\).\\
+\medskip
+
+\item \(P \rightarrow -P\)\\
+\(
+\begin{array}{|c|c|}
+P & P \leftrightarrow P \rightarrow -P\\ 
+\hline
+T & F\\
+F & F\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is \textbf{not} tautologically equivalent to \(P \rightarrow -P\).\\
+\medskip
+
+\item \(Q \lor -Q \rightarrow P\)\\
+\(
+\begin{array}{|c c|c|}
+P & Q & P \leftrightarrow (Q \lor -Q \rightarrow P)\\ 
+\hline
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & T\\
+\end{array}
+\)
+\singlespace
+Answer: \(P\) is tautologically equivalent to \(Q \lor -Q \rightarrow P\).\\
+\medskip
 \end{enumerate}
 
 \end{document}
