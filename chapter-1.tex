@@ -12,6 +12,96 @@
 \begin{document}
 \maketitle
 
+\section*{Exercise 2.}
+Which of the truth-functional connectives introduced in this chapter is an approximate synonym of the connective "unless"? (Hint: To say "There will be peace unless there is a major war in the next five years, then there will be peace" is equicalent to saying "If there is not a major war in the next five years, then there will be peace".)
+\singlespace
+Answer: Negation of implication
+
+\section*{Exercise 3.}
+
+Translate the following compound sentences into symbolic notation, using letters to stand for atomic sentences. 
+
+\begin{enumerate}[label=(\alph*)]
+    \item "Either the fire was produced by arson or it was produced by spontaneous combustion."
+\singlespace
+    \(M =\) "the fire was produced by arson",\\
+    \(L = \) "it was produced by spontaneous combustion"
+\singlespace
+
+\[M \lor L\]
+
+    \item "If the water is clear, then either Henry can see the bottom of the pool or he is a nincompoop."
+\singlespace
+    \(M =\) "the water is clear",\\
+    \(L = \) "Henry can see the bottom of the pool",\\
+    \(S = \) "he is a nincompoop"
+\singlespace
+
+\[M \rightarrow L \lor S\]
+
+    \item "Either John is not here or Mary is, and Helen certainly is."
+\singlespace
+    \(M =\) "John is here",\\
+    \(L = \) "Mary is here",\\
+    \(S = \) "Helen certainly is here"
+\singlespace
+
+\[-M \lor L \land S\]
+
+    \item "If there are more cats than dogs, then there are more horses than dogs and there are fewer snakes than cats."
+\singlespace
+    \(M =\) "there are more cats than dogs",\\
+    \(L = \) "there are more horses than dogs",\\
+    \(S = \) "there are fewer snakes than cats"
+\singlespace
+
+\[M \rightarrow (L \land S)\]
+
+    \item "The man in the moon is a fake, and if the same is true of Santa Claus, many children are deceived."
+\singlespace
+    \(M =\) "The man in the moon is a fake",\\
+    \(L = \) "the same is true of Santa Claus",\\
+    \(S = \) "many children are deceived"
+\singlespace
+
+\[M \land (L \rightarrow S)\]
+
+    \item "If either red-heads are lovely or blondes do not have freckles, then logic is confusing."
+\singlespace
+    \(M =\) "red-heads are lovely",\\
+    \(L = \) "blondes do not have freckles",\\
+    \(S = \) "logic is confusing"
+\singlespace
+
+\[(M \lor L) \rightarrow S\]
+
+    \item "If either housing is scarce or people like to live with their in-laws, and if people do not like to live with their in-laws, then housing is scarce."
+\singlespace
+    \(M =\) "housing is scarce",\\
+    \(L = \) "people like to live with their in-laws",\\
+\singlespace
+
+\[M \lor L \land -L \rightarrow M\]
+
+
+    \item "If John testifies and tells the truth, he will be found guilty; and if he does not testify, he will be found guilty."
+\singlespace
+    \(M =\) "John testifies",\\
+    \(L = \) "John thells the truth",\\
+    \(S = \) "he will be found guilty"
+\singlespace
+
+\[(M \land L \rightarrow S) \land (-M \rightarrow S)\]
+
+    \item "Either John must testify and tell the truth, or he does not have to testify."
+\singlespace
+    \(M =\) "John must testify",\\
+    \(L = \) "John must tell the truth",\\
+\singlespace
+
+\[(M \land L) \lor -M\]
+\end{enumerate}
+
 \section*{Exercise 4.}
 In the following examples determine the truth value of the compound sentences from the given truth values of the component sentences.
 \medskip
