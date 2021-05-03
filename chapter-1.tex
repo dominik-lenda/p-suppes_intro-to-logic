@@ -3,6 +3,7 @@
 \usepackage{enumitem}
 \setlist{nosep}  
 \usepackage{amsmath}
+\usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{titlesec}
 \titleformat*{\section}{\large\bfseries}
@@ -11,6 +12,42 @@
 \author{Dominik Lenda}
 \begin{document}
 \maketitle
+
+\section*{Exercise 1.}
+A classical example of a non-truth-functional connective is that of possibility. For example, the sentence:
+
+\begin{enumerate}
+\item "It is possible that there is life on Mars."
+\end{enumerate}
+is true under any liberal interpretation of the notion of possibility; but then so is the sentence:
+\begin{enumerate}[resume]
+\item "It is possible that there is not any life on Mars."
+\end{enumerate}
+On the other hand, the sentence:
+\begin{enumerate}[resume]
+\item "It is possible that \(2 + 2 = 5\)"
+\end{enumerate}
+is ordinarly regarded as false. Using a exclamation mark "!" for "it is possible that", M for "there is life on Mars" and W for "2 + 2 = 5", we get the following tabular analysis of (1)-(3):
+
+\[
+\begin{array}{c|c|c|c|c|c}
+M & -M & W & !M & !-M & !W\\
+\hline
+T & F & F & T & T & F\\
+F & T &  & T & T & F\\
+\end{array}
+\]
+\singlespace
+The analysis of !M and !-M entails that the only truth-functiona lanalysis of the possibility connective is that for any sentence P, !P is true, but the truth value of !W controverts this; and we see that there is no appriopriate truth-functional analysis.
+\singlespace
+Give examples and an anlysis to show that the following are not truth-functional connectives:
+\begin{enumerate}[label=(\alph*)]
+    \item "Mr. Smith belives that carrots are beasts."
+    \item "It is necessary that people eat pudding to stay fit."
+\singlespace
+\end{enumerate}
+
+\textbf{This exercise is not finished. In my opinion it has too long introduction and vague goal, so I will not finish it.}
 
 \section*{Exercise 2.}
 Which of the truth-functional connectives introduced in this chapter is an approximate synonym of the connective "unless"? (Hint: To say "There will be peace unless there is a major war in the next five years, then there will be peace" is equicalent to saying "If there is not a major war in the next five years, then there will be peace".)
